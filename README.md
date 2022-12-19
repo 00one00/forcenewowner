@@ -26,7 +26,7 @@ Since the '''changeOwner()''' function in our Target contracts condition require
 ## Setup
 To deploy the adversary contract, you will need to deploy on a testnet like goerli. If you are not familiar with deploying on a testnet there are many resourceful articles and guides. 
 Within 'helpful_scripts.py' there is a 'get_accounts()' function, this function is utilized several times in 'deploy_n_destroy.py' and is vital to being able to run the scripts. 
-* If you do not want to run this function, simply substitute it for 'account = accounts[0]' in the deploy() and deposit() functions and 'account = accounts[1]' in the alpha() and withdraw() functions. 
+* If you do not want to run this function, simply substitute it for '''account = accounts[0]''' in the deploy() and deposit() functions and '''account = accounts[1]''' in the alpha() and withdraw() functions. 
 Else, if you want to proceed with using the 'get_accounts()' function, you will need to create a custom account within brownie accounts following the [Brownie docs](https://eth-brownie.readthedocs.io/en/stable/account-management.html) or you can import your private key within the '.env' file and then run '$source.env' in your terminal. 
 Lastly, ensure you have gotten your Infura API key and pasted it into your .env file. If you are unfamiliar with Infura or Alchemy API keys or more generally nodes to connect to blockchains, find a resource online to brush up on this topic.
 
