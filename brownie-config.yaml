@@ -1,0 +1,14 @@
+networks:
+  default: "development"
+  development:
+    verify: false
+  goerli:
+    verify: true
+
+
+
+dotenv: .env
+
+
+wallets:
+  from_key: ${PRIVATE_KEY}
