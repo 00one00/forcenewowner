@@ -46,7 +46,7 @@ def withdraw(amount):
 
 
 def get_owner():
-    """Returns current owner of the contract"""
+    """Returns current owner and balance of the contract"""
     contract = Target[-1]
     print(f"Contract owner: {contract.owner()}")
     print(f"Contract balance: {Web3.fromWei(contract.getBalance(), 'ether')} ether")
@@ -54,7 +54,7 @@ def get_owner():
 
 def alpha():
     """
-    Deploy attack contract from seperate account
+    Deploy attack contract from seperate (adversary) account
     """
     account2 = get_account(id="test_acct_2")
     # Contract address to be passed into the adversary contract constructor
